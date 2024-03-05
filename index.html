@@ -29,8 +29,17 @@
         document.getElementById("age").textContent = age;
     }
 
+    //Marks years coding
+    function updateYearsCoding() {
+        var date = "2016-12-31";
+        var years = calculateAge(date);
+        var element = document.getElementById("years");
+        element.setAttribute('data-purecounter-end', years);
+    }
+
     // Call the updateAge function when the page loads
     window.onload = updateAge;
+    window.onload = updateYearsCoding;
 </script>
 
   <meta content="" name="description">
@@ -79,8 +88,8 @@
           <li><a class="nav-link active" href="#header">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#resume">Resume</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#services">Mig's World</a></li>
+          <!-- <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#services">Mig's World</a></li> -->
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -138,7 +147,7 @@
         </div>
 
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/mig-zen.jpg" class="img-fluid" alt="">
+          <img src="assets/img/mig-youth.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>What got me into Computer Programming</h3>
@@ -204,74 +213,74 @@
       <div class="row">
         <div class="col-lg-3 col-md-4">
           <div class="icon-box">
-            <i class="ri-store-line" style="color: #ffbb2c;"></i>
-            <h3>Lorem Ipsum</h3>
+            <i class="ri-flag-line" style="color: #ffbb2c;"></i>
+            <h3>Vexillology</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>Dolor Sitema</h3>
+            <i class="ri-dice-line" style="color: #d33710;"></i>
+            <h3>Dungeons & Dragons</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
-            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-            <h3>Sed perspiciatis</h3>
+            <i class="ri-emotion-laugh-line" style="color: #07c9eb;"></i>
+            <h3>Anime</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
           <div class="icon-box">
-            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-            <h3>Magni Dolores</h3>
+            <i class="ri-battery-2-charge-line" style="color: #e361ff;"></i>
+            <h3>Weightlifting</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #47aeff;"></i>
-            <h3>Nemo Enim</h3>
+            <i class="ri-film-line" style="color: #47aeff;"></i>
+            <h3>Documentaries</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-            <h3>Eiusmod Tempor</h3>
+            <i class="ri-mac-line" style="color: #ffa76e;"></i>
+            <h3>Visual Novels</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-            <h3>Midela Teren</h3>
+            <i class="ri-star-line" style="color: #11dbcf;"></i>
+            <h3>Dallas Cowboys</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-            <h3>Pira Neve</h3>
+            <i class="ri-code-box-line" style="color: #4233ff;"></i>
+            <h3>Coding</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-anchor-line" style="color: #b2904f;"></i>
-            <h3>Dirada Pack</h3>
+            <i class="ri-pencil-ruler-2-line" style="color: #b2904f;"></i>
+            <h3>Photoshop</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-disc-line" style="color: #b20969;"></i>
-            <h3>Moton Ideal</h3>
+            <i class="ri-bowl-line" style="color: #b20969;"></i>
+            <h3>Cooking</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-base-station-line" style="color: #ff5828;"></i>
-            <h3>Verdo Park</h3>
+            <i class="ri-lightbulb-flash-line" style="color: #ff5828;"></i>
+            <h3>Riddles</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-            <h3>Flavor Nivelanda</h3>
+            <i class="ri-globe-line" style="color: #29cc61;"></i>
+            <h3>Maps</h3>
           </div>
         </div>
       </div>
@@ -377,33 +386,36 @@
 
       <div class="row">
         <div class="col-lg-6">
-          <h3 class="resume-title">Summary</h3>
-          <div class="resume-item pb-0">
-            <h4>Sean Miguel Campbell</h4>
-            <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-            <p>
-            <ul>
-              <li>Portland par 127,Orlando, FL</li>
-              <li>(123) 456-7891</li>
-              <li>alice.barkley@example.com</li>
-            </ul>
-            </p>
-          </div>
 
           <h3 class="resume-title">Education</h3>
           <div class="resume-item">
             <h4>Bachelor of Science in Computer Science</h4>
-            <h4>Minor in STEM Education</h4>
-            <h5>2019 - 2024</h5>
+            <h5>2019 - Present</h5>
             <p><em>University of Arkansas, Fayetteville, AR</em></p>
-            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+            <p>I am currently pursuing a degree through the University of Arkansas's ABET-accredited Computer Science program. My involvement in this program has yielded projects including the Photon project, Interactive Periodic Table project, 
+              and the DASC Room Scheduler project. 
+              
+              <br><br>Relevant Courses:
+              <ul>
+                <li>Algorithms</li>
+                <li>Programming Paradigms</li>
+                <li>Database Management Systems</li>
+                <li>Mobile Programming</li>
+                <li>Software Engineering</li>
+              </ul>
+            </p>
           </div>
           <div class="resume-item">
-            <h4>Secondary Education</h4>
-            <h5>Graduated 2019</h5>
-            <p><em>Star City High School, Star City, AR</em></p>
-            <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-          </div>
+            <h4>Minor in STEM Education</h4>
+            <h5>2019 - 2023</h5>
+            <p><em>University of Arkansas, Fayetteville, AR</em></p>
+            <p>Through the UAteach (now STEM Education) program, I originally pursued a license to teach Computer Science at the high-school level. 
+              Though I opted out of the licensure path to place my focus in pursuing a carrer as a Software Engineer, I've had the opportunity to 
+              teach several lessons at Greenland High School (including lessons for AP Computer Science Principles) and a remote-teaching opportunity at
+              Springdale Public Schools to teach a unit on Algorithms.
+            </p>
+            <p>Alongside my involvement with the STEM Education curriculum, I have served as Treasurer, Secretary, and Vice-President for the program's RSO.</p>
+        </div>
         </div>
         <div class="col-lg-6">
           <h3 class="resume-title">Professional Experience</h3>
@@ -415,8 +427,8 @@
             <ul>
               <li>Transformed pre-existing applications to meet requirements for Anytime Release through integrating Helm and Kubernetes</li>
               <li>Modernized J.B. Hunt's Training Management System with the development of a Participation API </li>
-              <li>Assisted J.B. Hunt's Shipper team in developing features that allows administrators to make changes without developer assistance</li>
-              <li>Utilized Azure DevOps to track my current standing in the sprint</li>
+              <li>Assisted J.B. Hunt's Shipper team in developing features that allows administrators to make changes to their FAQ page without developer assistance</li>
+              <li>Colloborated within the Agile methodology to solidify my understanding of the Software Development Lifecycle</li>
             </ul>
             </p>
           </div>
@@ -439,7 +451,8 @@
     <div class="skills container">
 
       <div class="section-title">
-        <h2>Skills</h2>
+        <h2>Programming Languages</h2>
+        <pre style="white-space: pre-wrap; word-wrap: break-word;">Percentages are based on a mix of experience, mastery, and personal preference.</pre>
       </div>
 
       <div class="row skills-content">
@@ -447,23 +460,30 @@
         <div class="col-lg-6">
 
           <div class="progress">
-            <span class="skill">HTML <i class="val">100%</i></span>
+            <span class="skill">Java <i class="val">90%</i></span>
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
           <div class="progress">
-            <span class="skill">CSS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">JavaScript <i class="val">75%</i></span>
+            <span class="skill">C++ <i class="val">75%</i></span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">JavaScript/TypeScript <i class="val">80%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">PHP <i class="val">10%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
@@ -472,71 +492,214 @@
         <div class="col-lg-6">
 
           <div class="progress">
-            <span class="skill">PHP <i class="val">80%</i></span>
+            <span class="skill">Python <i class="val">85%</i></span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
           <div class="progress">
-            <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+            <span class="skill">Kotlin <i class="val">45%</i></span>
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
           <div class="progress">
-            <span class="skill">Photoshop <i class="val">55%</i></span>
+            <span class="skill">SQL <i class="val">75%</i></span>
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
+
+          <div class="progress">
+            <span class="skill">R<i class="val">15%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
 
         </div>
 
       </div>
 
+      <!-- ======= Frameworks ======= -->
+      <br>
+      <div class="section-title">
+        <h2>Libraries & Frameworks</h2>
+      </div>
+    <div class="interests container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="ri-angularjs-line" style="color: #DD0031;"></i>
+            <h3>Angular</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-reactjs-line" style="color: #61DAFB;"></i>
+            <h3>React</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-code-s-slash-line" style="color: #44B78B;"></i>
+            <h3>Django</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-bootstrap-line" style="color: #563d7C;"></i>
+            <h3>Bootstrap</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-leaf-line" style="color: #6dB33F;"></i>
+            <h3>Spring</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-javascript-line" style="color: #0081CB;"></i>
+            <h3>Material UI</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-code-box-line" style="color: #0769AD;"></i>
+            <h3>jQuery</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-cup-line" style="color: #D81B60;"></i>
+            <h3>JavaFX</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="bi bi-feather" style="color: #D22128;"></i>
+            <h3>Apache</h3>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Frameworks -->
+
+      <!-- ======= Interests ======= -->
+      <br>
+      <div class="section-title">
+        <h2>Tools</h2>
+      </div>
+    <div class="interests container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="ri-git-merge-line" style="color: #DD0031;"></i>
+            <h3>Git</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-dashboard-line" style="color: #007087;"></i>
+            <h3>Azure DevOps</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-search-eye-line" style="color: #FFA500;"></i>
+            <h3>JPQL</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class="bi bi-feather" style="color: #C71E36;"></i>
+            <h3>Maven</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="bi bi-fire" style="color: #4285F4;"></i>
+            <h3>Firebase</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-android-line" style="color: #28A745;"></i>
+            <h3>Android Studio</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-ship-line" style="color: #2496ED;"></i>
+            <h3>Docker</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-cloud-line" style="color: #326CE5;"></i>
+            <h3>K8s</h3>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Frameworks -->
+
+
+
+
+
+
+
+
     </div><!-- End Skills -->
         <!-- ======= Counts ======= -->
-    <div class="counts container">
+    <!-- <div class="counts container">
 
       <div class="row">
 
         <div class="col-lg-3 col-md-6">
           <div class="count-box">
-            <i class="bi bi-emoji-smile"></i>
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Happy Clients</p>
+            <i class="bi bi-calendar2-week"></i>
+            <span data-purecounter-start="0" data-purecounter-end="1.5" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Years of Experience</p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
           <div class="count-box">
-            <i class="bi bi-journal-richtext"></i>
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+            <i class="bi bi-code-slash"></i>
+            <span id="years" data-purecounter-start="0" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Years Coding</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-journal-code"></i>
+            <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="1" class="purecounter"></span>
             <p>Projects</p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="count-box">
-            <i class="bi bi-headset"></i>
-            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hours Of Support</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
             <i class="bi bi-award"></i>
-            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Awards</p>
+            <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Certifications</p>
           </div>
         </div>
 
       </div>
 
-    </div><!-- End Counts -->
+    </div>End Counts -->
 
     
       </div>
@@ -775,11 +938,9 @@
             <i class="bx bx-share-alt"></i>
             <h3>Social Profiles</h3>
             <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.youtube.com/@tehpinoyorca" class="youtube"><i class="bi bi-youtube"></i></a>
+              <a href="https://www.instagram.com/tehpinoyorca/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/smc050/" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
