@@ -828,6 +828,8 @@ section .container {
   overflow: hidden;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
+  border: 3px solid #FFDB58;
+  border-radius: 25px;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -915,7 +917,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #63eda3;
+  color: #FFD700;
 }
 
 .portfolio .portfolio-wrap:hover::before {
