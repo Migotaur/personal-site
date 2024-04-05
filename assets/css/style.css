@@ -25,13 +25,31 @@ body::before {
   content: "";
   position: fixed;
   background: #040404 url("../img/bg.jpg") top right no-repeat;
+  filter:brightness(50%);
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
   z-index: -1;
+  animation: backgroundSlide 15s infinite;
 }
+
+@keyframes backgroundSlide {
+  0% {
+      background-image: url('../img/bg.jpg');
+  }
+  33.33% {
+      background-image: url('../img/bg2.jpg');
+  }
+  66.67% {
+      background-image: url('../img/bg3.jpg');
+  }
+  100%{
+    background-image: url('../img/bg.jpg');
+  }
+}
+
 
 @media (min-width: 1024px) {
   body::before {
