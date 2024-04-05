@@ -95,9 +95,23 @@ h6 {
   font-size: 24px;
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.8);
+  text-shadow: -1px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
 }
 
 #header h2 span {
+  color: #fff;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 6px;
+}
+
+#header h3 {
+  font-size: 16px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: -1px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+}
+
+#header h3 span {
   color: #fff;
   border-bottom: 2px solid #FFD700;
   padding-bottom: 6px;
@@ -136,7 +150,7 @@ h6 {
     font-size: 36px;
   }
 
-  #header h2 {
+  #header h2, h3 {
     font-size: 20px;
     line-height: 30px;
   }
@@ -163,7 +177,7 @@ h6 {
 }
 
 #header.header-top .social-links,
-#header.header-top h2 {
+#header.header-top h2, #header.header-top h3 {
   display: none;
 }
 
