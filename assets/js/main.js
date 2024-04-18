@@ -20,6 +20,23 @@
     }
   }
 
+    /**
+   * Name Typing Effect
+   */
+  const typed = select('.typed')
+  if (typed) {
+    let typed_strings = typed.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: false,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 1000,
+      showCursor: false
+    });
+  }
+
   /**
    * Easy event listener function
    */
@@ -82,6 +99,7 @@
 
       if (this.hash == '#header') {
         header.classList.remove('header-top')
+        console.log("HEADER")
         sections.forEach((item) => {
           item.classList.remove('section-show')
         })
@@ -90,6 +108,7 @@
 
       if (!header.classList.contains('header-top')) {
         header.classList.add('header-top')
+        console.log("NOT HEADER")
         setTimeout(function() {
           sections.forEach((item) => {
             item.classList.remove('section-show')
