@@ -5,7 +5,7 @@ grant select on public.site_editors to authenticated;
 create policy "Editors can see their own membership" on public.site_editors for select to authenticated using (user_id = (select auth.uid()));
 create table if not exists public.site_content (
  id text primary key check (id = 'main'),
- fields jsonb not null check (jsonb_typeof(fields) = 'array'),
+ fields jsonb not null constraint site_content_fields_check check (jsonb_typeof(fields) = 'array' or (jsonb_typeof(fields) = 'object' and coalesce(fields->>'version', '') = '2')),
  updated_at timestamptz not null default now()
 );
 alter table public.site_content enable row level security;

@@ -1,0 +1,23 @@
+<section id="portfolio" class="portfolio"><div class="container">
+  <div class="section-title"><h2>{{site.projects.title}}</h2><p>{{site.projects.subtitle}}</p></div>
+  <div class="row"><div class="col-lg-12 d-flex justify-content-center"><ul id="portfolio-flters">
+    <li data-filter="*" class="filter-active">{{site.projects.filters.all}}</li>
+    <li data-filter=".filter-desktop">{{site.projects.filters.desktop}}</li>
+    <li data-filter=".filter-mobile">{{site.projects.filters.mobile}}</li>
+    <li data-filter=".filter-web">{{site.projects.filters.web}}</li>
+    <li data-filter=".filter-finished">{{site.projects.filters.completed}}</li>
+    <li data-filter=".filter-unfinished">{{site.projects.filters.development}}</li>
+  </ul></div></div>
+  <div class="row portfolio-container">@for (project of site.projects.items; track project.id) {
+    <div [class]="'col-lg-3 col-md-5 portfolio-item filter-' + project.platform + (project.status === 'completed' ? ' filter-finished' : ' filter-unfinished')">
+      <div class="portfolio-wrap"><img [src]="project.image" class="img-fluid" [alt]="project.imageAlt || project.name">
+        <div class="portfolio-info"><h4>{{project.name}}</h4><p>{{project.description}}</p>
+          @if (project.note) {<pre [style.color]="project.noteColor">{{project.note}}</pre>}
+          <div class="portfolio-links">@for (link of project.links; track $index) {
+            <a [href]="link.url" [title]="link.label" [attr.aria-label]="link.label" [class.portfolio-details-lightbox]="link.details" [attr.data-glightbox]="link.details ? 'type: external' : null" [attr.data-gallery]="link.details ? 'portfolioDetailsGallery' : null" [attr.target]="link.details ? null : '_blank'" rel="noopener noreferrer"><i [class]="link.icon"></i></a>
+          }</div>
+        </div>
+      </div>
+    </div>
+  }</div>
+</div></section>

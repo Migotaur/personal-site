@@ -1,3 +1,5 @@
+throw new Error('The one-time HTML migration is retired. Edit src/app components and public/content.json instead.');
+/*
 import fs from 'node:fs';
 import {parse,serialize} from 'parse5';
 const doc=parse(fs.readFileSync('index.html','utf8'));
@@ -26,3 +28,5 @@ fs.writeFileSync('src/page.html',serialize(body));
 fs.writeFileSync('public/content.json',JSON.stringify(fields,null,2));
 head.childNodes=head.childNodes.filter(n=>n.tagName!=='script');
 fs.writeFileSync('src/index.html','<!doctype html><html lang="en"><head><base href="/">'+serialize(head)+'</head><body><app-root>Loading Miguel?s site?</app-root></body></html>');
+
+*/

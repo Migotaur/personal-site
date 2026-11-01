@@ -1,0 +1,48 @@
+<section id="resume" class="resume"><div class="container">
+  <div class="section-title"><h2>{{site.resume.title}}</h2><p>{{site.resume.subtitle}}</p>
+    <pre><a [href]="site.resume.download.url">{{site.resume.download.label}}</a> {{site.resume.downloadSuffix}}</pre>
+  </div>
+  <div class="row">
+    <div class="col-lg-6"><h3 class="resume-title">{{site.resume.educationTitle}}</h3>
+      @for (entry of site.resume.education; track $index) {
+        <div class="resume-item"><h4>{{entry.title}}</h4><h5>{{entry.dates}}</h5><p><em>{{entry.organization}}</em></p>
+          @for (paragraph of entry.paragraphs; track $index) {<p>{{paragraph}}</p>}
+          @if (entry.bulletsTitle) {<p>{{entry.bulletsTitle}}</p>}
+          @if (entry.bullets.length) {<ul>@for (bullet of entry.bullets; track $index) {<li>{{bullet}}</li>}</ul>}
+        </div>
+      }
+    </div>
+    <div class="col-lg-6"><h3 class="resume-title">{{site.resume.experienceTitle}}</h3>
+      @for (entry of site.resume.experience; track $index) {
+        <div class="resume-item"><h4>{{entry.title}}</h4><h5>{{entry.dates}}</h5><p><em>{{entry.organization}}</em></p>
+          @for (paragraph of entry.paragraphs; track $index) {<p>{{paragraph}}</p>}
+          @if (entry.bulletsTitle) {<p>{{entry.bulletsTitle}}</p>}
+          @if (entry.bullets.length) {<ul>@for (bullet of entry.bullets; track $index) {<li>{{bullet}}</li>}</ul>}
+        </div>
+      }
+    </div>
+  </div>
+  <div class="skills container"><div class="section-title"><h2>{{site.resume.skillsTitle}}</h2><pre class="text-wrap">{{site.resume.skillsNote}}</pre></div>
+    <div class="row language-cards">@for (skill of site.resume.skills; track $index) {
+      <div class="col-lg-6 mb-4"><article class="language-card">
+        <div class="language-heading"><h3>{{skill.name}}</h3>@if (skill.experience) {<span class="language-experience">{{skill.experience}}</span>}</div>
+        <div class="language-labels">
+          @if (skill.personalAcademicProjects) {<span class="language-label">Personal/Academic Projects</span>}
+          @if (skill.professionalExperience) {<span class="language-label professional">Professional Experience</span>}
+        </div>
+        @if (skill.summary) {<p>{{skill.summary}}</p>}
+        @if (skill.projectUrl) {<a [href]="skill.projectUrl" target="_blank" rel="noopener noreferrer">View a project <i class="bi bi-arrow-up-right"></i></a>}
+      </article></div>
+    }</div>
+  </div>
+  <div class="interests container"><div class="section-title"><h2>{{site.resume.frameworksTitle}}</h2></div>
+    <div class="row">@for (badge of site.resume.frameworks; track $index) {
+      <div class="col-lg-3 col-md-4 mb-4"><div class="icon-box"><i [class]="badge.icon" [style.color]="badge.color"></i><h3>{{badge.label}}</h3></div></div>
+    }</div>
+  </div>
+  <div class="interests container"><div class="section-title"><h2>{{site.resume.toolsTitle}}</h2></div>
+    <div class="row">@for (badge of site.resume.tools; track $index) {
+      <div class="col-lg-3 col-md-4 mb-4"><div class="icon-box"><i [class]="badge.icon" [style.color]="badge.color"></i><h3>{{badge.label}}</h3></div></div>
+    }</div>
+  </div>
+</div></section>

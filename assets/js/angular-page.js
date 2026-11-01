@@ -131,7 +131,7 @@
   /**
    * Activate/show sections on load with hash links
    */
-  (() => {
+  ;(() => {
     if (window.location.hash) {
       let initial_nav = select(window.location.hash)
 
@@ -207,7 +207,7 @@
   /**
    * Porfolio isotope and filter
    */
-  (() => {
+  ;(() => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {

@@ -1,0 +1,9 @@
+<section id="contact" class="contact"><div class="container">
+  <div class="section-title"><h2>{{site.contact.title}}</h2><p>{{site.contact.subtitle}}</p></div>
+  <div class="row mt-2">
+    <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch"><div class="info-box"><i class="bx bx-share-alt"></i><h3>{{site.contact.socialTitle}}</h3>
+      <div class="social-links">@for (link of site.contact.socialLinks; track $index) {<a [href]="link.url" [attr.aria-label]="link.label"><i [class]="link.icon"></i></a>}</div>
+    </div></div>
+    <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch"><div class="info-box"><i class="bx bx-envelope"></i><h3>{{site.contact.emailTitle}}</h3><p><a [href]="'mailto:' + site.contact.email">{{site.contact.email}}</a></p></div></div>
+  </div>
+</div></section>

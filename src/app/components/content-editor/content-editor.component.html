@@ -1,0 +1,35 @@
+@if (schema.kind === 'object') {
+  @for (entry of properties; track entry[0]) {
+    @if (entry[1].kind === 'object' || entry[1].kind === 'list') {
+      <fieldset [attr.data-field]="childPath(entry[0])"><legend>{{label(entry[0])}}</legend>
+        <site-content-editor [schema]="entry[1]" [value]="value[entry[0]]" [path]="childPath(entry[0])" />
+      </fieldset>
+    } @else {
+      <label>{{label(entry[0])}}
+        @switch (entry[1].kind) {
+          @case ('boolean') {<input type="checkbox" [attr.aria-label]="label(entry[0])" [ngModel]="value[entry[0]]" (ngModelChange)="set(entry[0], $event)">}
+          @case ('choice') {<select [attr.aria-label]="label(entry[0])" [ngModel]="value[entry[0]]" (ngModelChange)="set(entry[0], $event)">@for (option of $any(entry[1]).options; track option) {<option [value]="option">{{label(option)}}</option>}</select>}
+          @case ('number') {<input type="number" [min]="$any(entry[1]).min" [max]="$any(entry[1]).max" [attr.aria-label]="label(entry[0])" [ngModel]="value[entry[0]]" (ngModelChange)="set(entry[0], $event)">}
+          @case ('color') {<input type="color" [attr.aria-label]="label(entry[0])" [ngModel]="value[entry[0]]" (ngModelChange)="set(entry[0], $event)">}
+          @default {<textarea rows="2" [attr.aria-label]="label(entry[0])" [ngModel]="value[entry[0]]" (ngModelChange)="set(entry[0], $event)"></textarea>}
+        }
+      </label>
+    }
+  }
+} @else if (schema.kind === 'list') {
+  @for (item of value; track $index; let i = $index) {
+    <div class="entry" [attr.data-entry-index]="i">
+      <div class="entry-actions"><strong>{{title(item, i)}}</strong>
+        <button type="button" (click)="move(i, -1)" [disabled]="i === 0" [attr.aria-label]="'Move ' + title(item, i) + ' up'">Up</button>
+        <button type="button" (click)="move(i, 1)" [disabled]="i === value.length - 1" [attr.aria-label]="'Move ' + title(item, i) + ' down'">Down</button>
+        <button type="button" class="remove" (click)="remove(i)" [attr.aria-label]="'Remove ' + title(item, i)">Remove</button>
+      </div>
+      @if (itemSchema.kind === 'object') {
+        <site-content-editor [schema]="itemSchema" [value]="item" [path]="childPath(i)" />
+      } @else {
+        <label>Text<textarea rows="2" [ngModel]="item" (ngModelChange)="set(i, $event)"></textarea></label>
+      }
+    </div>
+  } @empty {<p>No entries yet.</p>}
+  <button type="button" (click)="add()">Add entry</button>
+}

@@ -1,0 +1,5 @@
+@if (loaded) {
+  @if (admin) { <site-admin /> } @else { <site-page /> }
+} @else {
+  <p class="loading" role="status">{{ error || 'Loading site?' }}</p>
+}

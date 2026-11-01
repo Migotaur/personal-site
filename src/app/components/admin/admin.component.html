@@ -1,0 +1,24 @@
+<main class="editor">
+  <a href="./">Back to site</a><h1>Edit site content</h1>
+  <p>Edit your profile, resume, skills, and projects. Use Add entry, Remove, Up, and Down to manage lists.</p>
+  @if (!configured) {<p>Database setup is pending. Export your draft to keep changes, or import a saved draft. Connect Supabase to publish.</p>}
+  @if (configured && !signedIn) {
+    <form (ngSubmit)="login()">
+      <label>Email<input type="email" name="email" [(ngModel)]="email" required autocomplete="username"></label>
+      <label>Password<input type="password" name="password" [(ngModel)]="password" required autocomplete="current-password"></label>
+      <button [disabled]="busy">Sign in</button>
+    </form>
+  } @else {
+    <div class="toolbar">
+      <label>Section<select aria-label="Section" [(ngModel)]="section">@for (item of sections; track item.key) {<option [value]="item.key">{{item.label}}</option>}</select></label>
+      <button (click)="exportContent()" [disabled]="busy">Export content</button>
+      <label class="import">Import content<input type="file" accept="application/json,.json" (change)="importContent($event)" [disabled]="busy"></label>
+      <button (click)="reset()" [disabled]="busy">Discard draft</button>
+      @if (configured) {<button (click)="publish()" [disabled]="busy">{{busy ? 'Publishing...' : 'Publish changes'}}</button><button (click)="logout()" [disabled]="busy">Sign out</button>}
+      <p role="status">{{message}}</p>
+    </div>
+    <p>Changes stay in this draft until you publish or export. Leaving or refreshing the page discards unexported changes.</p>
+    <fieldset [disabled]="busy" class="draft-fields"><site-content-editor [schema]="schema" [value]="draft[section]" [path]="section" /></fieldset>
+  }
+  @if (configured && !signedIn) {<p role="status">{{message}}</p>}
+</main>
