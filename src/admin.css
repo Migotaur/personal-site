@@ -1,0 +1,5 @@
+.editor {max-width: 960px; margin: 40px auto; padding: 28px; background: #181818; color: #eee; position: relative; z-index: 10;}
+.editor h1 {font-size: 2rem;} .editor label {display:block; margin:18px 0; color:#ddd;}
+.editor input,.editor textarea,.editor select {display:block; width:100%; background:#252525; color:white; border:1px solid #777; border-radius:4px; padding:10px; margin-top:6px;}
+.editor button {padding:10px 16px; margin:8px 12px 8px 0; border:0; border-radius:4px; background:#18d26e; color:#101010;}
+.editor button:disabled {opacity:.5;} .editor .toolbar {position:sticky; top:0; background:#181818; padding:12px 0; z-index:1;} .loading {padding:40px;}
