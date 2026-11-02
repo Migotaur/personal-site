@@ -1,0 +1,25 @@
+<header id="header">
+    <div class="container">
+      <h1><span class="typed" [attr.data-typed-items]="site.profile.aliases.join(',')">  </span> {{ site.profile.familyName }} </h1>
+      
+      
+      
+      <h2>@for (part of site.profile.tagline; track $index) { @if (part.highlighted) { <span>{{ part.text }}</span> } @else { {{ part.text }} } }</h2>
+      <h3> {{ site.profile.note }} <a [attr.href]="site.profile.featureLink.url" target="_blank"> {{ site.profile.featureLink.label }} </a> {{ site.profile.noteSuffix }} </h3>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header"> {{ site.navigation.home }} </a></li>
+          <li><a class="nav-link" href="#about"> {{ site.navigation.about }} </a></li>
+          <li><a class="nav-link" href="#resume"> {{ site.navigation.resume }} </a></li>
+          <li><a class="nav-link" href="#portfolio"> {{ site.navigation.projects }} </a></li>
+          
+          <li><a class="nav-link" href="#contact"> {{ site.navigation.contact }} </a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+      <div class="social-links">@for (link of site.socialLinks; track $index) { <a [href]="link.url" [attr.aria-label]="link.label"><i [class]="link.icon"></i></a> }</div>
+
+    </div>
+  </header>

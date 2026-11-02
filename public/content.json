@@ -1,0 +1,759 @@
+{
+  "version": 2,
+  "profile": {
+    "aliases": [
+      "Miggle",
+      "MiGS",
+      "Miggy",
+      "Miguel"
+    ],
+    "familyName": "Campbell",
+    "fullName": "Sean Miguel Campbell",
+    "tagline": [
+      {
+        "text": "Award winning",
+        "highlighted": false
+      },
+      {
+        "text": "documentarian",
+        "highlighted": true
+      },
+      {
+        "text": "*. Somewhat of a",
+        "highlighted": false
+      },
+      {
+        "text": "software engineer",
+        "highlighted": true
+      },
+      {
+        "text": ".",
+        "highlighted": false
+      }
+    ],
+    "note": "*Technically. It won 2nd Place at a State Convention.",
+    "featureLink": {
+      "url": "https://www.youtube.com/watch?v=IzgEJtuPJzc&t=31s",
+      "label": "(Feast your eyes)"
+    },
+    "noteSuffix": ".",
+    "portrait": "assets/img/me.jpg",
+    "portraitAlt": "Sean Miguel Campbell",
+    "intro": "With experience in both frontend and backend development, my enjoyment in software development is rooted from my love for problem\n            solving, expressing creativity, and creating value for others.",
+    "location": "Fayetteville, AR",
+    "email": "seanmiguel.campbell@gmail.com",
+    "role": "Full-Stack Developer",
+    "biography": "My roots begin in a rural town called Bearden, Arkansas. Growing up in a small town, I was raised in a quite close-knit environment, where\n            being part of a team held a significant meaning. With this, I grew up alongside many classmates playing football, participating in community service,\n            and competing in collaborative events concerning Engineering, Economics, and Civics. The biggest takeaway I have from these experiences, is that a team\n            functions as a system where every piece holds a vital role for it to function properly. As a piece of that system, this takeaway has conditioned me to ask questions\n            when I am unsure and falling behind and to help and bolster others. When we all get better, everything moves forward, so I strive to the best of my\n            ability to learn/promote new ideas that can make me and others better."
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "resume": "Resume",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "socialLinks": [
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/tehpinoyorca/",
+      "icon": "bi bi-instagram"
+    },
+    {
+      "label": "Discord",
+      "url": "https://www.discordapp.com/users/383855277524647936",
+      "icon": "bi bi-discord"
+    },
+    {
+      "label": "Github",
+      "url": "https://github.com/Migotaur",
+      "icon": "bi bi-github"
+    },
+    {
+      "label": "Linkedin",
+      "url": "https://www.linkedin.com/in/smc050/",
+      "icon": "bi bi-linkedin"
+    }
+  ],
+  "about": {
+    "title": "About",
+    "subtitle": "Learn more about me",
+    "locationLabel": "Location:",
+    "emailLabel": "Email:",
+    "roleLabel": "Role:",
+    "stories": [
+      {
+        "id": "story-1",
+        "image": "assets/img/mig-youth.jpg",
+        "imageAlt": "",
+        "chapters": [
+          {
+            "title": "What got me into Computer Programming",
+            "paragraphs": [
+              {
+                "runs": [
+                  {
+                    "text": "One day I was in my fifth-period Keyboarding class (you know the one where you learn the 'right' way to type), and I was doing my assignment.\n            I absolutely hated that class because I knew",
+                    "strike": false
+                  },
+                  {
+                    "text": "that my carrer would not involve me being in front of a keyboard and monitor every day",
+                    "strike": true
+                  },
+                  {
+                    "text": ", and it\n            was very boring. My school was experimenting to see if students wanted to try out coding, and I was asked if I wanted to try the new thing out in exchange\n            for being excused from the assignment. (uh....yeah I do). It was then and there, on that Khan Academy Javascript course, that I found a new thing I wanted to explore. Figuring things out,\n            being experimental, and getting creative were the perfect formula for allowing my extensive imagination and love for problem solving thrive together.",
+                    "strike": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "My interest in Software Engineering",
+            "paragraphs": [
+              {
+                "runs": [
+                  {
+                    "text": "I just wanted to use my creativity to make games. Game development was all I wanted to do up to my Senior year of high school. Our football season had ended and there were a \n             couple of senior teammates (including myself) that wanted to lift in the offseason but were now out of the athletic program. \n             We wanted to safely max out and keep a sheet to do so, but were no longer in presence of coaches nor were provided sheets.",
+                    "strike": false
+                  }
+                ]
+              },
+              {
+                "runs": [
+                  {
+                    "text": "This sparked an idea: create an app to solve our problem. I created a program (that I called DigiCoach) that would calculate one's theoretical\n             one-rep-max, and create a weekly sheet set to work towards that max. This was the first application that I had developed on my own that \n             was soley for utility. Using that app and seeing how it helped my friends changed my course for where I wanted to go with my love for programming.\n             Now, I wanted to set my career to provide value and utlity for others.",
+                    "strike": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "story-2",
+        "image": "assets/img/capstone.jpg",
+        "imageAlt": "",
+        "chapters": [
+          {
+            "title": "College and Beyond",
+            "paragraphs": [
+              {
+                "runs": [
+                  {
+                    "text": "With a new fire to begin on projects, I kicked off my freshman year with the McMillon Innovation Studio, where I assisted in conducting research\n            around telehealth in rural areas, and creating a prototype for locating telehealth providers. My first year as a college student saw the \n            wake of COVID-19 pandemic, where I began doing classes and projects exclusively remote. In my Sophomore year, I started work on ReZerve, a \n            startup project lead by a student who was inspired to create a platform for stylists to book appointments and track their performance in the\n            pandemic. This introduced me into utilizing web frameworks and backend interfaces, such as Stripe's payment API, and was my greatest learning curve thus far. I worked alongside a university Capstone team\n            and continued as a developer until we launched it for live use.",
+                    "strike": false
+                  }
+                ]
+              },
+              {
+                "runs": [
+                  {
+                    "text": "During this time, I also pursued a potential role in education. In my freshman year, I joined the UAteach (now STEM Education) program and began practicum\n            teaching in Computer Science classrooms. Prior to Arkansas's Computer Science inititaive, I experienced a limiting curriculum in Computer Science and \n            developed a desire to take part in helping promote computer science to aspiring students. In my sophomore year, I became treasurer of the \n            STEM Education RSO, and eventually Vice-President in my junior year.",
+                    "strike": false
+                  }
+                ]
+              },
+              {
+                "runs": [
+                  {
+                    "text": "Going into my later years of college, I worked alongside a team of Software Engineering students to recreate a simulation of Photon, one of the first\n            commercial lasertag programs, with an emphasis on agile methodology. During college, I was hired on as an Applications Development Intern where I began to develop\n            into a Full-Stack Developer. In my senior year of college, I worked in a Capstone team alongside the Data Science Department to create a room scheduling application \n            for students enrolled in the data science program.",
+                    "strike": false
+                  }
+                ]
+              },
+              {
+                "runs": [
+                  {
+                    "text": "In the Spring of 2023, I obtained my Minor in Stem Education. In May 2024, I graduated from the University of Arkansas with a B.S. in Computer Science.",
+                    "strike": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "interestsTitle": "Interests",
+    "interests": [
+      {
+        "label": "Vexillology",
+        "icon": "ri-flag-line",
+        "color": "#ffbb2c"
+      },
+      {
+        "label": "Dungeons & Dragons",
+        "icon": "ri-dice-line",
+        "color": "#d33710"
+      },
+      {
+        "label": "Anime",
+        "icon": "ri-emotion-laugh-line",
+        "color": "#07c9eb"
+      },
+      {
+        "label": "Weightlifting",
+        "icon": "ri-battery-2-charge-line",
+        "color": "#e361ff"
+      },
+      {
+        "label": "Documentaries",
+        "icon": "ri-film-line",
+        "color": "#47aeff"
+      },
+      {
+        "label": "Visual Novels",
+        "icon": "ri-mac-line",
+        "color": "#ffa76e"
+      },
+      {
+        "label": "Dallas Cowboys",
+        "icon": "ri-star-line",
+        "color": "#11dbcf"
+      },
+      {
+        "label": "Coding",
+        "icon": "ri-code-box-line",
+        "color": "#4233ff"
+      },
+      {
+        "label": "Photoshop",
+        "icon": "ri-pencil-ruler-2-line",
+        "color": "#b2904f"
+      },
+      {
+        "label": "Cooking",
+        "icon": "ri-bowl-line",
+        "color": "#b20969"
+      },
+      {
+        "label": "Riddles",
+        "icon": "ri-lightbulb-flash-line",
+        "color": "#ff5828"
+      },
+      {
+        "label": "Maps",
+        "icon": "ri-globe-line",
+        "color": "#29cc61"
+      }
+    ]
+  },
+  "resume": {
+    "frameworks": [
+      {
+        "label": "Angular",
+        "icon": "ri-angularjs-line",
+        "color": "#DD0031"
+      },
+      {
+        "label": "React",
+        "icon": "ri-reactjs-line",
+        "color": "#61DAFB"
+      },
+      {
+        "label": "Django",
+        "icon": "ri-code-s-slash-line",
+        "color": "#44B78B"
+      },
+      {
+        "label": "Bootstrap",
+        "icon": "ri-bootstrap-line",
+        "color": "#563d7C"
+      },
+      {
+        "label": "Spring",
+        "icon": "ri-leaf-line",
+        "color": "#6dB33F"
+      },
+      {
+        "label": "Material UI",
+        "icon": "ri-javascript-line",
+        "color": "#0081CB"
+      },
+      {
+        "label": "jQuery",
+        "icon": "ri-code-box-line",
+        "color": "#0769AD"
+      },
+      {
+        "label": "JavaFX",
+        "icon": "ri-cup-line",
+        "color": "#D81B60"
+      },
+      {
+        "label": "Apache",
+        "icon": "bi bi-feather",
+        "color": "#D22128"
+      }
+    ],
+    "tools": [
+      {
+        "label": "Git",
+        "icon": "ri-git-merge-line",
+        "color": "#DD0031"
+      },
+      {
+        "label": "Azure DevOps",
+        "icon": "ri-dashboard-line",
+        "color": "#007087"
+      },
+      {
+        "label": "JPQL",
+        "icon": "ri-search-eye-line",
+        "color": "#FFA500"
+      },
+      {
+        "label": "Maven",
+        "icon": "bi bi-feather",
+        "color": "#C71E36"
+      },
+      {
+        "label": "Firebase",
+        "icon": "bi bi-fire",
+        "color": "#4285F4"
+      },
+      {
+        "label": "Android Studio",
+        "icon": "ri-android-line",
+        "color": "#28A745"
+      },
+      {
+        "label": "Docker",
+        "icon": "ri-ship-line",
+        "color": "#2496ED"
+      },
+      {
+        "label": "K8s",
+        "icon": "ri-cloud-line",
+        "color": "#326CE5"
+      }
+    ],
+    "title": "Resume",
+    "subtitle": "Check My Resume",
+    "download": {
+      "url": "Miguel Campbell Resume SWE (Site Edition).pdf",
+      "label": "Click here"
+    },
+    "downloadSuffix": "for a pdf version.",
+    "educationTitle": "Education",
+    "education": [
+      {
+        "title": "Bachelor of Science in Computer Science",
+        "dates": "2019 - 2024",
+        "organization": "University of Arkansas, Fayetteville, AR",
+        "paragraphs": [
+          "In May 2024, I obtained a BSc degree through the University of Arkansas's ABET-accredited Computer Science program. My involvement in this program has yielded projects including the Photon project, Interactive Periodic Table project, \n              and the DASC Room Scheduler project."
+        ],
+        "bulletsTitle": "Relevant Courses:",
+        "bullets": [
+          "Algorithms",
+          "Programming Paradigms",
+          "Database Management Systems",
+          "Mobile Programming",
+          "Software Engineering"
+        ]
+      },
+      {
+        "title": "Minor in STEM Education",
+        "dates": "2019 - 2023",
+        "organization": "University of Arkansas, Fayetteville, AR",
+        "paragraphs": [
+          "Through the UAteach (now STEM Education) program, I originally pursued a license to teach Computer Science at the high-school level. \n              Though I opted out of the licensure path to place my focus in pursuing a carrer as a Software Engineer, I've had the opportunity to \n              teach several lessons at Greenland High School (including lessons for AP Computer Science Principles) and a remote-teaching opportunity at\n              Springdale Public Schools to teach a unit on Algorithms.",
+          "Alongside my involvement with the STEM Education curriculum, I have served as Treasurer, Secretary, and Vice-President for the program's RSO."
+        ],
+        "bulletsTitle": "",
+        "bullets": []
+      }
+    ],
+    "experienceTitle": "Professional Experience",
+    "experience": [
+      {
+        "title": "Applications Development Intern",
+        "dates": "June 2022 - May 2023",
+        "organization": "J.B. Hunt Transport Inc., Fayetteville, AR",
+        "paragraphs": [],
+        "bulletsTitle": "",
+        "bullets": [
+          "Transformed pre-existing applications to meet requirements for Anytime Release through integrating Helm and Kubernetes",
+          "Modernized J.B. Hunt's Training Management System with the development of a Participation API",
+          "Assisted J.B. Hunt's Shipper team in developing features that allows administrators to make changes to their FAQ page without developer assistance",
+          "Collaborated within the Agile methodology to solidify understanding of the Software Development Lifecycle"
+        ]
+      },
+      {
+        "title": "Telehealth Development/Research Team Member",
+        "dates": "August 2019 - February 2020",
+        "organization": "McMillon Innovation Studio, Fayetteville, AR",
+        "paragraphs": [],
+        "bulletsTitle": "",
+        "bullets": [
+          "Colloborated in a team of 6 to examine the gap of telemedicine practices in Arkansas",
+          "Conducted research surveys and interviews with 400+ consumers to survey the telehealth market",
+          "Attended professional development workshops hosted by the Innovation Studio to strengthen soft skills",
+          "Created a prototype application intended to bridge clients and providers and pitch solution to the University of Arkansas for Medical Sciences"
+        ]
+      }
+    ],
+    "skillsTitle": "Programming Languages",
+    "skillsNote": "Languages I have used in personal, academic, and professional work.",
+    "skills": [
+      {
+        "name": "Java",
+        "experience": "3 years",
+        "personalAcademicProjects": true,
+        "professionalExperience": true,
+        "summary": "",
+        "projectUrl": ""
+      },
+      {
+        "name": "C++",
+        "experience": "3 years",
+        "personalAcademicProjects": true,
+        "professionalExperience": false,
+        "summary": "",
+        "projectUrl": ""
+      },
+      {
+        "name": "C#",
+        "experience": "3 years",
+        "personalAcademicProjects": true,
+        "professionalExperience": false,
+        "summary": "",
+        "projectUrl": ""
+      },
+      {
+        "name": "Python",
+        "experience": "3 years",
+        "personalAcademicProjects": true,
+        "professionalExperience": true,
+        "summary": "",
+        "projectUrl": ""
+      },
+      {
+        "name": "HTML/CSS/JS",
+        "experience": "3 years",
+        "personalAcademicProjects": true,
+        "professionalExperience": false,
+        "summary": "",
+        "projectUrl": ""
+      },
+      {
+        "name": "Kotlin",
+        "experience": "3 years",
+        "personalAcademicProjects": true,
+        "professionalExperience": false,
+        "summary": "",
+        "projectUrl": ""
+      },
+      {
+        "name": "SQL",
+        "experience": "3 years",
+        "personalAcademicProjects": true,
+        "professionalExperience": false,
+        "summary": "",
+        "projectUrl": ""
+      },
+      {
+        "name": "R",
+        "experience": "3 years",
+        "personalAcademicProjects": true,
+        "professionalExperience": false,
+        "summary": "",
+        "projectUrl": ""
+      }
+    ],
+    "frameworksTitle": "Libraries & Frameworks",
+    "toolsTitle": "Tools"
+  },
+  "services": {
+    "title": "Mig's World",
+    "subtitle": "Other Interesting Stuff",
+    "items": [
+      {
+        "title": "D&D Characters",
+        "description": "See the collection of my past D&D characters!",
+        "icon": "bi bi-hexagon",
+        "url": ""
+      },
+      {
+        "title": "Bad Code",
+        "description": "Old code from my days in high school (enter at your own risk)",
+        "icon": "bi bi-code-slash",
+        "url": ""
+      },
+      {
+        "title": "State Flag Redesigns",
+        "description": "What U.S. state flags would look like if I had a say in the matter",
+        "icon": "bi bi-flag",
+        "url": ""
+      },
+      {
+        "title": "Nemo Enim",
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+        "icon": "bx bx-world",
+        "url": ""
+      },
+      {
+        "title": "Dele cardo",
+        "description": "Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur",
+        "icon": "bx bx-slideshow",
+        "url": ""
+      },
+      {
+        "title": "Divera don",
+        "description": "Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur",
+        "icon": "bx bx-arch",
+        "url": ""
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "My Work",
+    "filters": {
+      "all": "All",
+      "desktop": "Desktop",
+      "mobile": "Mobile",
+      "web": "Web",
+      "completed": "Completed",
+      "development": "In Development"
+    },
+    "items": [
+      {
+        "id": "project-1",
+        "image": "assets/img/portfolio/miggledev-1.jpg",
+        "imageAlt": "",
+        "name": "miggledev.com",
+        "description": "Personal Website",
+        "platform": "web",
+        "status": "development",
+        "note": "(You are here)",
+        "noteColor": "#18d26e",
+        "links": [
+          {
+            "label": "Source Code",
+            "url": "https://github.com/Migotaur/personal-site",
+            "icon": "bi bi-github",
+            "details": false
+          }
+        ]
+      },
+      {
+        "id": "project-2",
+        "image": "assets/img/portfolio/dungeonmaestro-1.jpg",
+        "imageAlt": "",
+        "name": "DungeonMaestro5e",
+        "description": "Web Application",
+        "platform": "web",
+        "status": "development",
+        "note": "Version 0.1.0-alpha.2",
+        "noteColor": "#18d26e",
+        "links": [
+          {
+            "label": "Portfolio Details",
+            "url": "portfolio-items/dungeonmaestro-details.html",
+            "icon": "bi bi-info-circle",
+            "details": true
+          },
+          {
+            "label": "Source Code",
+            "url": "https://github.com/Programmer-Palasade/dungeon-maestro-5e",
+            "icon": "bi bi-github",
+            "details": false
+          },
+          {
+            "label": "Application",
+            "url": "https://dungeonmaestro5e.web.app/",
+            "icon": "bi bi-globe",
+            "details": false
+          }
+        ]
+      },
+      {
+        "id": "project-3",
+        "image": "assets/img/portfolio/dasc-1.jpg",
+        "imageAlt": "",
+        "name": "DASC Room Scheduler",
+        "description": "Capstone Project",
+        "platform": "web",
+        "status": "completed",
+        "note": "",
+        "noteColor": "#18d26e",
+        "links": [
+          {
+            "label": "Portfolio Details",
+            "url": "portfolio-items/dasc-details.html",
+            "icon": "bi bi-info-circle",
+            "details": true
+          },
+          {
+            "label": "Project Site",
+            "url": "https://capstone-csce.uark.edu/fall-2022-spring-2023/teams-7-12-fa22/team-7-room-scheduler/",
+            "icon": "bi bi-globe",
+            "details": false
+          }
+        ]
+      },
+      {
+        "id": "project-4",
+        "image": "assets/img/portfolio/qtbey-1.jpg",
+        "imageAlt": "",
+        "name": "Quest to Beat El Yeehaw",
+        "description": "Visual Novel",
+        "platform": "desktop",
+        "status": "development",
+        "note": "(In Development)",
+        "noteColor": "#f3a42e",
+        "links": [
+          {
+            "label": "Portfolio Details",
+            "url": "portfolio-items/qtbey-details.html",
+            "icon": "bi bi-info-circle",
+            "details": true
+          }
+        ]
+      },
+      {
+        "id": "project-5",
+        "image": "assets/img/portfolio/photon-1.jpg",
+        "imageAlt": "",
+        "name": "Photon (Reverse Engineered)",
+        "description": "Desktop Application",
+        "platform": "desktop",
+        "status": "completed",
+        "note": "",
+        "noteColor": "#18d26e",
+        "links": [
+          {
+            "label": "Portfolio Details",
+            "url": "portfolio-items/photon-details.html",
+            "icon": "bi bi-info-circle",
+            "details": true
+          },
+          {
+            "label": "Source Code",
+            "url": "https://github.com/Migotaur/team-14-photon",
+            "icon": "bi bi-github",
+            "details": false
+          }
+        ]
+      },
+      {
+        "id": "project-6",
+        "image": "assets/img/portfolio/rezerve-1.jpg",
+        "imageAlt": "",
+        "name": "ReZerve",
+        "description": "Web Application",
+        "platform": "web",
+        "status": "completed",
+        "note": "",
+        "noteColor": "#18d26e",
+        "links": [
+          {
+            "label": "Portfolio Details",
+            "url": "portfolio-items/rezerve-details.html",
+            "icon": "bi bi-info-circle",
+            "details": true
+          },
+          {
+            "label": "Source Code",
+            "url": "https://github.com/rezerve-startup/rezerve",
+            "icon": "bi bi-github",
+            "details": false
+          }
+        ]
+      },
+      {
+        "id": "project-7",
+        "image": "assets/img/portfolio/ipt-1.jpg",
+        "imageAlt": "",
+        "name": "Interactive Periodic Table",
+        "description": "Mobile Application",
+        "platform": "mobile",
+        "status": "completed",
+        "note": "",
+        "noteColor": "#18d26e",
+        "links": [
+          {
+            "label": "Portfolio Details",
+            "url": "portfolio-items/ipt-details.html",
+            "icon": "bi bi-info-circle",
+            "details": true
+          },
+          {
+            "label": "Source Code",
+            "url": "https://github.com/Migotaur/InteractivePeriodTable",
+            "icon": "bi bi-github",
+            "details": false
+          }
+        ]
+      },
+      {
+        "id": "project-8",
+        "image": "assets/img/portfolio/wsw-1.jpg",
+        "imageAlt": "",
+        "name": "WriteScholarWay",
+        "description": "Computer Application",
+        "platform": "desktop",
+        "status": "completed",
+        "note": "Information Unavailable",
+        "noteColor": "#18d26e",
+        "links": []
+      },
+      {
+        "id": "project-9",
+        "image": "assets/img/portfolio/catchy-1.jpg",
+        "imageAlt": "",
+        "name": "Catchy",
+        "description": "Mobile Application",
+        "platform": "mobile",
+        "status": "completed",
+        "note": "Information Unavailable",
+        "noteColor": "#18d26e",
+        "links": []
+      },
+      {
+        "id": "project-10",
+        "image": "assets/img/portfolio/digicoach-1.jpg",
+        "imageAlt": "",
+        "name": "DigiCoach",
+        "description": "Computer Application",
+        "platform": "desktop",
+        "status": "completed",
+        "note": "Information Unavailable",
+        "noteColor": "#18d26e",
+        "links": []
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Contact Me",
+    "socialTitle": "Social Profiles",
+    "socialLinks": [
+      {
+        "label": "Youtube",
+        "icon": "bi bi-youtube",
+        "url": "https://www.youtube.com/@tehpinoyorca"
+      },
+      {
+        "label": "Instagram",
+        "icon": "bi bi-instagram",
+        "url": "https://www.instagram.com/tehpinoyorca/"
+      },
+      {
+        "label": "Linkedin",
+        "icon": "bi bi-linkedin",
+        "url": "https://www.linkedin.com/in/smc050/"
+      }
+    ],
+    "emailTitle": "Email Me",
+    "email": "seanmiguel.campbell@gmail.com"
+  },
+  "footer": {
+    "prefix": "Templated by",
+    "url": "https://bootstrapmade.com/",
+    "label": "BootstrapMade"
+  }
+}

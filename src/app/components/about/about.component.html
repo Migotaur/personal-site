@@ -1,0 +1,32 @@
+<section id="about" class="about">
+  <div class="about-me container">
+    <div class="section-title"><h2>{{site.about.title}}</h2><p>{{site.about.subtitle}}</p></div>
+    <div class="row">
+      <div class="col-lg-4"><img [src]="site.profile.portrait" class="img-fluid" [alt]="site.profile.portraitAlt"></div>
+      <div class="col-lg-8 pt-4 pt-lg-0 content">
+        <h3>{{site.profile.fullName}}</h3><p class="fst-italic">{{site.profile.intro}}</p>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i><strong>{{site.about.locationLabel}}</strong> {{site.profile.location}}</li>
+          <li><i class="bi bi-chevron-right"></i><strong>{{site.about.emailLabel}}</strong> {{site.profile.email}}</li>
+          <li><i class="bi bi-chevron-right"></i><strong>{{site.about.roleLabel}}</strong> {{site.profile.role}}</li>
+        </ul><p>{{site.profile.biography}}</p><br>
+      </div>
+      @for (story of site.about.stories; track story.id) {
+        <div class="col-lg-4"><img [src]="story.image" class="img-fluid" [alt]="story.imageAlt"></div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content">
+          @for (chapter of story.chapters; track $index) {
+            <h3>{{chapter.title}}</h3>
+            @for (paragraph of chapter.paragraphs; track $index) {
+              <p>@for (run of paragraph.runs; track $index) { @if (run.strike) { <s>{{run.text}}</s> } @else { {{run.text}} } }</p>
+            }
+          }
+        </div>
+      }
+    </div>
+  </div>
+  <div class="interests container"><div class="section-title"><h2>{{site.about.interestsTitle}}</h2></div>
+    <div class="row">@for (interest of site.about.interests; track $index) {
+      <div class="col-lg-3 col-md-4 mb-4"><div class="icon-box"><i [class]="interest.icon" [style.color]="interest.color"></i><h3>{{interest.label}}</h3></div></div>
+    }</div>
+  </div>
+</section>

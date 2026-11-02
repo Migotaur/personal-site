@@ -1,0 +1,9 @@
+.language-card { height: 100%; padding: 22px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1); border-radius: 8px; }
+.language-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+.language-heading h3 { font-size: 20px; margin: 0; font-weight: 600; }
+.language-experience { color: #ddd; font-size: 14px; }
+.language-labels { display: flex; flex-wrap: wrap; gap: 8px; }
+.language-label { padding: 5px 10px; border-radius: 20px; font-size: 12px; background: rgba(255,255,255,.09); color: #e4e4e4; }
+.language-label.professional { background: rgba(24,210,110,.12); color: #18d26e; border: 1px solid rgba(24,210,110,.3); }
+.language-card p { margin: 16px 0 0; white-space: pre-line; }
+.language-card > a { display: inline-block; margin-top: 16px; }

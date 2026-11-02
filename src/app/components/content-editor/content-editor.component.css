@@ -1,0 +1,14 @@
+:host { display: block; }
+fieldset { border: 1px solid #555; padding: 16px; margin: 20px 0; min-width: 0; }
+legend { float: none; width: auto; padding: 0 8px; font-size: 1.15rem; }
+label { display: block; margin: 14px 0; color: #ddd; }
+textarea, input:not([type=checkbox]), select { display: block; width: 100%; background: #252525; color: white; border: 1px solid #777; border-radius: 4px; padding: 10px; margin-top: 6px; }
+textarea { min-height: 72px; resize: vertical; }
+input[type=checkbox] { margin-left: 12px; }
+input[type=color] { height: 44px; }
+button { padding: 8px 12px; margin: 6px; border: 1px solid #537563; border-radius: 4px; background: #223b2d; color: white; }
+button:disabled { opacity: .4; }
+button.remove { border-color: #bd6666; }
+.entry { border-left: 3px solid #18d26e; padding: 12px; margin: 16px 0; background: #1e1e1e; }
+.entry-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.entry-actions strong { flex: 1; overflow-wrap: anywhere; }

@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "projects": {
+    "personal-site": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "src/main.ts",
+            "index": "src/index.html",
+            "tsConfig": "tsconfig.json",
+            "outputPath": "dist/personal-site",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "assets",
+                "output": "assets"
+              },
+              {
+                "glob": "**/*",
+                "input": "public",
+                "output": "/"
+              },
+              {
+                "glob": "**/*",
+                "input": "portfolio-items",
+                "output": "portfolio-items"
+              },
+              {
+                "glob": "**/*",
+                "input": "migs-world",
+                "output": "migs-world"
+              },
+              {
+                "glob": "*.pdf",
+                "input": ".",
+                "output": "/"
+              },
+              {
+                "glob": "CNAME",
+                "input": ".",
+                "output": "/"
+              }
+            ],
+            "styles": [
+              "src/admin.css"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "all",
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": false
+              }
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "options": {
+            "buildTarget": "personal-site:build"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
+}
