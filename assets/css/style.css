@@ -32,7 +32,7 @@ body::before {
   top: 0;
   height: 100vh;
   z-index: -1;
-  animation: backgroundSlide 15s infinite;
+  /* animation: backgroundSlide 15s infinite; */
 }
 
 @keyframes backgroundSlide {
