@@ -29,17 +29,9 @@
         document.getElementById("age").textContent = age;
     }
 
-    //Marks years coding
-    function updateYearsCoding() {
-        var date = "2016-12-31";
-        var years = calculateAge(date);
-        var element = document.getElementById("years");
-        element.setAttribute('data-purecounter-end', years);
-    }
 
     // Call the updateAge function when the page loads
     window.onload = updateAge;
-    window.onload = updateYearsCoding;
 </script>
 
   <meta content="" name="description">
