@@ -6,6 +6,7 @@ import { ContentService } from '../../services/content.service';
   standalone: true,
   templateUrl: './about.component.html',
   styles: [':host { display: contents; }'],
+  styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
   private readonly content = inject(ContentService);

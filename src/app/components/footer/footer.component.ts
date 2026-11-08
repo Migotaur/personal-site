@@ -10,4 +10,7 @@ import { ContentService } from '../../services/content.service';
 export class FooterComponent {
   private readonly content = inject(ContentService);
   get site() { return this.content.document; }
+  readonly currentYear = new Date().getFullYear();
 }
+
+

@@ -3,13 +3,49 @@
     <div class="section-title"><h2>{{site.about.title}}</h2><p>{{site.about.subtitle}}</p></div>
     <div class="row">
       <div class="col-lg-4"><img [src]="site.profile.portrait" class="img-fluid" [alt]="site.profile.portraitAlt"></div>
-      <div class="col-lg-8 pt-4 pt-lg-0 content">
-        <h3>{{site.profile.fullName}}</h3><p class="fst-italic">{{site.profile.intro}}</p>
-        <ul>
-          <li><i class="bi bi-chevron-right"></i><strong>{{site.about.locationLabel}}</strong> {{site.profile.location}}</li>
-          <li><i class="bi bi-chevron-right"></i><strong>{{site.about.emailLabel}}</strong> {{site.profile.email}}</li>
-          <li><i class="bi bi-chevron-right"></i><strong>{{site.about.roleLabel}}</strong> {{site.profile.role}}</li>
-        </ul><p>{{site.profile.biography}}</p><br>
+      <div class="col-lg-8 pt-2 pt-lg-0 content">
+        <h3>My Journey</h3><p class="fst-italic">{{site.profile.intro}}</p>
+        
+<div class="row g-3 mt-3">
+
+  <!-- Developer -->
+  <div class="col-md-4">
+    <div class="about-card h-100">
+      <i class="bi bi-code-slash"></i>
+      <h5>Developer</h5>
+      <p>
+        Building practical applications and digital tools
+        that make everyday tasks easier.
+      </p>
+    </div>
+  </div>
+
+  <!-- Problem Solver -->
+  <div class="col-md-4">
+    <div class="about-card h-100">
+      <i class="bi bi-lightbulb"></i>
+      <h5>Problem Solver</h5>
+      <p>
+        Turning complex challenges into simple,
+        creative, and effective solutions.
+      </p>
+    </div>
+  </div>
+
+  <!-- Educator -->
+  <div class="col-md-4">
+    <div class="about-card h-100">
+      <i class="bi bi-mortarboard"></i>
+      <h5>Educator</h5>
+      <p>
+        Making technology accessible and inspiring
+        others through hands-on learning.
+      </p>
+    </div>
+  </div>
+
+</div>
+
       </div>
       @for (story of site.about.stories; track story.id) {
         <div class="col-lg-4"><img [src]="story.image" class="img-fluid" [alt]="story.imageAlt"></div>

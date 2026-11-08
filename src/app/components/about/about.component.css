@@ -1,0 +1,44 @@
+
+.about-card {
+  background-color: #151515;
+  border: 1px solid #292929;
+  border-radius: 10px;
+  padding: 22px 18px;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.about-card i {
+  color: #ffdf00;
+  font-size: 28px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.about-card h5 {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.about-card p {
+  color: #bcbcbc;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  border-color: #ffdf00;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-card {
+    transition: none;
+  }
+
+  .about-card:hover {
+    transform: none;
+  }
+}
