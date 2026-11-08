@@ -7,32 +7,6 @@
 
   <title>Miguel Campbell | Personal Site</title>
 
-  <script>
-    // Function to calculate age based on birthdate
-    function calculateAge(birthdate) {
-        var today = new Date();
-        var birthDate = new Date(birthdate);
-        var age = today.getFullYear() - birthDate.getFullYear();
-
-        // Check if the birthday has occurred this year
-        if (today.getMonth() < birthDate.getMonth() || (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate())) {
-            age--;
-        }
-
-        return age;
-    }
-
-    // Function to update age on the webpage
-    function updateAge() {
-        var birthdate = "2001-02-05";
-        var age = calculateAge(birthdate);
-        document.getElementById("age").textContent = age;
-    }
-
-
-    // Call the updateAge function when the page loads
-    window.onload = updateAge;
-</script>
 
   <meta content="" name="description">
   <meta content="" name="keywords">
